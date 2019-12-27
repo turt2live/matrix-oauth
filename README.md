@@ -1,6 +1,10 @@
 # matrix-oauth
 An OAuth 2.0 server for Matrix accounts.
 
+Demo: https://demo.oauth.t2host.io/
+
+Support room: [#oauth:t2bot.io](https://matrix.to/#/#oauth:t2bot.io)
+
 This is currently in early development and does not support the Authorization header. It does
 however support confidential clients (exclusively) through the config. Only authorization code
 grants are supported (4.1 of RFC 6749).
