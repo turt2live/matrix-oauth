@@ -23,7 +23,7 @@ export async function tokenExchange(req: Request, res: Response) {
     const session = AuthManager.cancelTokenSession(code);
     const reassertSession = () => AuthManager.startTokenSession(session.client, session.scope, session.redirectUri, session.matrixUserId, session.matrixAccessToken, session.matrixHomeserverUrl, session.expiresTs);
 
-    if (session.expiresTs >= (new Date()).getTime()) {
+    if (session.expiresTs <= (new Date()).getTime()) {
         // Do not reassert session here!
         return res.status(400).json({
             error: 'invalid_request',
