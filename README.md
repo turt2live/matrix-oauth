@@ -1,7 +1,7 @@
 # matrix-oauth
 An OAuth 2.0 server for Matrix accounts.
 
-Demo: https://demo.oauth.t2host.io/
+Demo: https://demo.oauth.t2host.io/ (powered by [matrix-oauth-demo](https://github.com/turt2live/matrix-oauth-demo))
 
 Support room: [#oauth:t2bot.io](https://matrix.to/#/#oauth:t2bot.io)
 
