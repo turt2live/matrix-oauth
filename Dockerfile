@@ -13,5 +13,6 @@ RUN cd /tmp/src \
 ENV NODE_ENV=production
 ENV NODE_CONFIG_DIR=/data/config
 
-CMD node /moauth/index.js
+WORKDIR /moauth
+CMD node index.js
 VOLUME ["/data"]
