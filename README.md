@@ -1,5 +1,5 @@
 # matrix-oauth
-An OAuth 2.0 server for Matrix accounts
+An OAuth 2.0 server for Matrix accounts.
 
 This is currently in early development and does not support the Authorization header. It does
 however support confidential clients (exclusively) through the config. Only authorization code
