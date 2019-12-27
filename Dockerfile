@@ -4,6 +4,8 @@ RUN cd /tmp/src \
     && yarn install \
     && yarn build \
     && mv lib/ /moauth/ \
+    && mv templates/ /moauth/templates/ \
+    && mv public/ /moauth/public/ \
     && mv node_modules / \
     && cd / \
     && rm -rf /tmp/*
