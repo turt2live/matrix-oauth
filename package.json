@@ -1,0 +1,29 @@
+{
+  "name": "matrix-oauth",
+  "version": "0.0.1",
+  "description": "OAuth 2.0 server for Matrix",
+  "main": "lib/index.js",
+  "repository": "git@github.com:turt2live/matrix-oauth.git",
+  "author": "Travis Ralston",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project ./tsconfig.json -t stylish",
+    "start:dev": "yarn build && node lib/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.4",
+    "crypto-random-string": "^3.0.1",
+    "express": "^4.17.1",
+    "hash.js": "^1.1.7",
+    "js-yaml": "^3.13.1",
+    "liquidjs": "^9.6.0",
+    "matrix-bot-sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  }
+}

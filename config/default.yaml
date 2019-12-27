@@ -1,0 +1,22 @@
+# The port and address to listen for web requests on. Serves the frontend as well as the API.
+listenPort: 8080
+listenAddress: '0.0.0.0'
+
+# Where the HTML templates are located (using LiquidJS)
+# Typically this is left unchanged.
+templateDirectory: './templates'
+
+# Where to serve static files (like CSS, JS, etc) from
+# Typically this is left unchanged.
+assetsDirectory: './public'
+
+# The OAuth clients that can use this provider
+clients:
+  - id: firstclient
+    secret: changeme
+    redirectionUris:
+      - 'https://example.org/oauth/done'
+
+# Which homeservers this instance allows. Set to an empty list to allow any homeserver.
+homeservers:
+  - matrix.org
