@@ -16,7 +16,6 @@
     "config": "^3.2.4",
     "crypto-random-string": "^3.0.1",
     "express": "^4.17.1",
-    "hash.js": "^1.1.7",
     "js-yaml": "^3.13.1",
     "liquidjs": "^9.6.0",
     "matrix-bot-sdk": "^0.4.0"
