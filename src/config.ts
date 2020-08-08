@@ -13,6 +13,13 @@ interface IConfig {
     assetsDirectory: string;
     clients: OAuthClient[];
     homeservers: string[];
+    postgresql: {
+        user: string;
+        host: string;
+        database: string;
+        password: string;
+        port: number;
+    };
 }
 
 export default <IConfig>config;

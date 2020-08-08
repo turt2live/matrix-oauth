@@ -20,3 +20,11 @@ clients:
 # Which homeservers this instance allows. Set to an empty list to allow any homeserver.
 homeservers:
   - matrix.org
+
+# Connection details to the database. This is where session information will be stored.
+postgresql:
+  host: localhost
+  port: 5432
+  user: oauth
+  password: secret
+  database: oauth
