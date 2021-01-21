@@ -3,7 +3,7 @@ import * as config from "config";
 export interface OAuthClient {
     id: string;
     secret: string;
-    redirectUris: string[];
+    redirectionUris: string[];
 }
 
 interface IConfig {

@@ -27,6 +27,14 @@ export async function authorize(req: Request, res: Response) {
         return res.redirect(redirectUrl.href);
     }
 
+    if (!client.redirectionUris.includes(redirectUrl.href)) {
+        redirectUrl.searchParams.set('error', 'invalid_request');
+        redirectUrl.searchParams.set('error_description', 'invalid redirect_uri');
+        if (state) redirectUrl.searchParams.set('state', state);
+        redirectUrl.search = redirectUrl.searchParams.toString();
+        return res.redirect(redirectUrl.href);
+    }
+
     if (scope !== 'access_token') {
         // TODO: Support other scopes (https://github.com/turt2live/matrix-oauth/issues/1)
         redirectUrl.searchParams.set('error', 'invalid_scope');
